@@ -5,23 +5,14 @@ import basicSsl from '@vitejs/plugin-basic-ssl';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/reactjs-template/',
+  base: '/reactjs-template/', // Убедитесь, что этот путь соответствует вашему репозиторию на GitHub Pages
   plugins: [
-    // Allows using React dev server along with building a React application with Vite.
-    // https://npmjs.com/package/@vitejs/plugin-react-swc 
     react(),
-    // Allows using the compilerOptions.paths property in tsconfig.json.
-    // https://www.npmjs.com/package/vite-tsconfig-paths
     tsconfigPaths(),
-    // Allows using self-signed certificates to run the dev server using HTTPS.
-    // https://www.npmjs.com/package/@vitejs/plugin-basic-ssl
-     basicSsl(),
+    basicSsl(),
   ],
   publicDir: './public',
   server: {
-    // Uncomment this line if you want to expose your dev server and access it from the devices
-    // in the same network.
- //host: true,
-  }, 
-}); 
-
+    host: true,
+  },
+});
