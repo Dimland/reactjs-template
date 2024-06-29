@@ -8,7 +8,7 @@ export default defineConfig({
   base: '/reactjs-template',
   plugins: [
     // Allows using React dev server along with building a React application with Vite.
-    // https://npmjs.com/package/@vitejs/plugin-react-swc
+    // https://npmjs.com/package/@vitejs/plugin-react-swc 
     react(),
     // Allows using the compilerOptions.paths property in tsconfig.json.
     // https://www.npmjs.com/package/vite-tsconfig-paths
