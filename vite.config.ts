@@ -22,6 +22,6 @@ export default defineConfig({
     // Uncomment this line if you want to expose your dev server and access it from the devices
     // in the same network.
  host: true,
-  },
-});
+  }, 
+}); 
 
